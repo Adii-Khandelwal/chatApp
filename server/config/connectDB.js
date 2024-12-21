@@ -11,10 +11,10 @@ async function connectDB(){
         })
 
         connection.on('error',(error)=> {
-            console.log("something is wrong in mongoDB",error);
+            console.error("something is wrong in mongoDB",error);
         })
     }catch (error){
-        console.log("someting is wrong ,", error);
+        console.error("someting is wrong ,", error);
     }
 
 }
